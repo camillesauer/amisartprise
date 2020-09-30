@@ -2,11 +2,34 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: https://sass-lang.com/
 .formulaire-div{
-width: 1400px;
+width: 1260px;
 border-radius: 20px;
-height: 500px;
+height: 600px;
 margin: 50px;
 background-color: white;
+}
+
+.flex-second{
+display: flex;
+  justify-content:space-between;
+  align-items: center;
+}
+
+
+@media screen and (min-width: 1800px) {
+.flex-one{
+display: flex;
+flex-direction: column;
+  justify-content:center;
+  align-items: center;
+}
+}
+
+
+.information img {
+  width: 200px;
+  margin:40px;
+  text-align: center;
 }
 
 .logo img {
@@ -23,16 +46,31 @@ background-color: white;
   align-items: center;
 }
 
+.flexbox-form-deux{
+
+  display: flex;
+  flex-direction: column;
+  justify-content:center;
+  align-items: center;
+}
+
 .title-info{
 color:white !important;
 font-size: 40px;
+text-align: center;
+
 }
 
 .p-info{
-text-align: left;
+text-align: center;
 color:white !important;
 font-size: 18px;
     line-height: 30px;
+}
+
+.p-info-deux{
+text-align: center;
+color:white !important;
 }
 
 .red-formule{
@@ -51,8 +89,21 @@ height: auto;
 margin: 50px;
 background-color: white;
 padding: 30px
+
 }
 
+.padding-form{
+margin: 50px;
+padding: 100px;
+}
+
+.info-ad p{
+  text-align:center
+}
+
+.info-ad h2{
+  text-align:center
+}
 .menu {
   box-shadow: 0 2px 6px rgba(0,0,0,0.2);
   background: white;
@@ -65,6 +116,13 @@ padding: 30px
   margin-bottom: 20px;
 }
 
+.flex-column{
+ display: flex;
+  flex-direction: column;
+  justify-content:center;
+  align-items: center;
+}
+
 
 .information{
 
@@ -72,7 +130,6 @@ width: 550px;
 border-radius: 20px;
 height: auto;
 margin: 50px;
-
 padding: 30px
 }
 
@@ -105,12 +162,46 @@ body h3{
   font-weight:bold;
 }
 
-body p{
-  font-family: 'Cabin', sans-serif;
-  font-size: 12px;
+table {
+  border-spacing: 10px;
+  border-collapse: separate;
 }
 
-.avatar {
+.white{
+  color:white;
+}
+
+body p{
+  font-family: 'Cabin', sans-serif;
+  font-size: 13px;
+}
+
+body td{
+  text-align:center;
+  font-family: 'Cabin', sans-serif;
+  font-size: 15px;
+    margin:100px;
+     color:white;
+}
+
+tr a{
+  color:white;
+  font-weight:bold;
+  font-size: 18px;
+}
+
+table{
+  border: 3px solid white;
+  border-radius:20px;
+}
+
+
+tr h1{
+  color:red;
+  font-size: 18px;
+}
+
+  .avatar {
   width: 40px;
   border-radius: 50%;
 }
@@ -466,20 +557,43 @@ color:red;
   color: black;
 }
 
+.btn-danger {
+
+}
+
+.form-inputs input{
+  text-align: center;
+      height: auto;
+      margin:10px;
+    border-radius: 10px;
+    border: solid red;
+}
+
+button, select {
+   font-family: 'Cabin', sans-serif;
+  font-size: 14px;
+
+    text-align: center;
+      height: auto;
+      margin:10px;
+    border-radius: 5px;
+    border: solid red;
+}
 
 
 @media (max-width: 499px) {
 .form-inputs textarea{
-    height: auto;
+    height: 30px;
     width: 300px;
+    margin:10px;
     border-radius: 10px;
     border: solid red;
   }}
 
 @media (min-width: 500px) {
 .form-inputs textarea{
-    height: auto;
-    width: 400px;
+    height: 30px;
+margin:10px;
     border-radius: 10px;
     border: solid red;
   }}
@@ -1700,6 +1814,7 @@ margin: 10px;
 text-align: center;
 width: 200px;
 }
+
 
 .title-section-2C{
 font-size: 20px;

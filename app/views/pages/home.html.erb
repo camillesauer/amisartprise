@@ -4,21 +4,27 @@
   <div class="flexbox-form">
 
       <div class="flex-one">
-        <div class="information">
+        <div class="information flexbox-form-deux">
 
             <h1 class="title-info">Devenons Amis</h1>
+             <br>
+             <p class="p-info-deux">*Rejoignez notre réseau d’Amis et contribuez à la construction de la première communauté
+d’artistes plasticiens professionnels de France!</p>
+            <br>
             <p class="p-info">Amateurs d’art, Artiviste, professionnel de la culture, collectionneurs
               ou mécènes : Participez à la construction de la 1ère communauté d’artistes
               plasticiens professionnels de France.
               Les Amis d’Art Prise, Place à la culture de demain! forment une communauté
               active et soudée de membres passionnées et militants pour
               un monde de l’art et de la culture qui améliore l’environnement professionnel
-              de ses artistes.
+              de ses artistes. <br>
+               <br>
               En adhérant à l’association vous participez activement au développement
               et à l’enrichissement de nos projets d’aujourd’hui et de demain.
               Tout au long de l’année, votre participation sera valorisée pour que
               vous puissiez vous sentir partie intégrante de l’aventure d’Art Prise,
-              Place à la culture de demain ! aux côtés d’autres passionnés et fidèles.
+              Place à la culture de demain ! aux côtés d’autres passionnés et fidèles. <br>
+               <br>
               Une fois par an, il sera remis par un jury d’Amis, une distinction des
               Amis d’Art Prise, place à la culture de demain ! L’artiste lauréat de la Distinction
               sera choisi parmi les Ambassadeurs mis à l’honneur mensuellement
@@ -28,15 +34,17 @@
               la culture de demain !
               Les mécènes - entreprises et individuels - peuvent en outre profiter des dispositifs
               d’incitations fiscales en vigueur.</p>
-
+              <%= image_tag("logo_court_blanc.png", alt: "Quelque chose de neuf")%>
           </div>
-        <div class="formules">
+        <div class="formules padding-form">
+
           <h1 class="red-formule">Nos formules d’adhésion</h1>
+          <br>
           <div>
               <h2 class="red">Donateurs ponctuels:</h2>
               <p>
-                Versement d’un montant de votre choix, à chaque fois
-                que vous souhaitez contribuer <br> au développement
+                Versement d’un montant de votre choix, à chaque fois <br>
+                que vous souhaitez contribuer au développement <br>
                 d’Art Prise, Place à la culture de demain !
               </p>
           </div>
@@ -79,10 +87,34 @@
         </div>
       </div>
 
-    <div class="formulaire-div">
-
-<%= render template: "amis/new" %>
+  <div class="formulaire-div flex-second padding-form">
+    <div>
+      <h2 class="red">Informations personnelles:</h2>
+      <br>
+      <%= render template: "amis/new" %>
     </div>
+    <div class="padding-form">
+      <h2 class="red">Moyens de paiement:</h2>
+      <br>
+      <h3 class="red">Option 1:</h3>
+      <p>Chèque rempli à l’ordre de
+      Art Prise, Place à la culture de demain.<br>
+      Adresse postale pour l’envoi:<br>
+      22 rue marmontel, 75015 Paris, France</p>
+      <br>
+      <h3 class="red">Option 2: </h3>
+      <p>Virement bancaire à:<br>
+      Art Prise, Place  à la culture de demain!<br>
+      IBAN</p>
+      <br>
+      <p><i>*à réception de  votre paiement, votre adhésion sera effective <br>
+        et une carte de membre vous sera envoyée.</i></p>
+      <br>
+<p><i>*Ce formulaire est à nous retourner complété par mail <br>
+à Ilaria@artprise.fr</i></p>
+    </div>
+  </div>
+
 </div>
 <%= render "components/footer" %>
 </body>

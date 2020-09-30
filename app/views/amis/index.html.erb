@@ -1,1 +1,40 @@
-index.html.erb
+
+<body style="background-color:#FF0000;">
+  <%= render "components/header" %>
+<div class="container-ok">
+  <div class="flex-column">
+<h1 class="white title-info">Les Amis d'Art Prise</h1>
+<br>
+<div class="info-ad">
+<h2 class="white">Types d'adhésions:</h2>
+<p class="white">Indice n°1 - Donateur ponctuel<br>
+Indice n°2 - Ami<br>
+Indice n°3 - Ami Bienfaiteur<br>
+Indice n°4 - Ami Grand Donateur</p>
+</div>
+<br>
+<br>
+<table>
+  <tbody>
+    <% @amis.each do |ami| %>
+      <tr>
+        <td><h1 class="white">Nom</h1><%= ami.nom %></td>
+        <td><h1 class="white">Prénom</h1><%= ami.prenom %></td>
+        <td><h1 class="white">Adresse</h1><%= ami.adresse %></td>
+        <td><h1 class="white">Téléphone</h1><%= ami.telephone %></td>
+        <td><h1 class="white">Mail</h1><%= ami.mail %></td>
+        <td><h1 class="white">Type d'adhésion</h1><%= ami.category_id%></td>
+        <td><h1 class="white">Date de création</h1><%= ami.created_at%></td>
+
+        <td><%= link_to 'Edit', edit_ami_path(ami) %></td>
+        <td><%= link_to 'Destroy', ami, method: :delete, data: { confirm: 'Êtes-vous certain(e) de vouloir supprimer?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+</div>
+</div>
+<%= render "components/footer" %>
+</body>

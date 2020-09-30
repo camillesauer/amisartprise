@@ -14,6 +14,22 @@ class AmisController < ApplicationController
     end
   end
 
+  def edit
+    @ami = Ami.find(params[:id])
+  end
+
+  def update
+    @ami = Ami.find(params[:id])
+    @ami.update(ami_params)
+    redirect_to amis_path
+  end
+
+  def destroy
+    @ami = Ami.find(params[:id])
+    @ami.destroy
+    redirect_to amis_path
+  end
+
   private
 
   def ami_params
