@@ -1,0 +1,19 @@
+<%= simple_form_for(@ami) do |f| %>
+
+         <%= f.error_notification %>
+         <%= f.error_notification message: f.object.errors[:base].to_sentence if f.object.errors[:base].present? %>
+
+         <div class="form-inputs">
+          <h3 class="title-new">Adhérer</h3>
+           <%= f.input :nom %>
+           <%= f.input :prenom %>
+           <%= f.input :adresse %>
+           <%= f.input :mail %>
+           <%= f.input :telephone %>
+           <%= f.select :category_id, Category.all.map {|c| [c.name, c.id]}%>
+         </div>
+
+         <div class="form-actions">
+           <%= f.button :submit, class: "btn btn-danger title-new" %>
+         </div>
+       <% end %>

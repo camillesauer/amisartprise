@@ -1,0 +1,20 @@
+<div class="container-ok">
+<div class="d-flex container justify-content-center display-bubble">
+    <%= simple_form_for(@category) do |f| %>
+
+         <%= f.error_notification %>
+         <%= f.error_notification message: f.object.errors[:base].to_sentence if f.object.errors[:base].present? %>
+
+         <div class="form-inputs">
+          <h3 class="title-new">Ajouter une catégorie</h3>
+          <p class="conseil">Essayez de répartir le texte sur les différents champs intitulés "content" pour plus d'harmonie.</p>
+           <%= f.input :name %>
+
+         </div>
+
+         <div class="form-actions">
+           <%= f.button :submit, class: "btn btn-danger title-new" %>
+         </div>
+       <% end %>
+</div>
+</div>
