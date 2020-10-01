@@ -1,5 +1,6 @@
 
 <body style="background-color:#FF0000;">
+  <div class="container">
   <%= render "components/header" %>
   <div class="flexbox-form">
 
@@ -36,7 +37,7 @@ d’artistes plasticiens professionnels de France!</p>
               d’incitations fiscales en vigueur.</p>
               <%= image_tag("logo_court_blanc.png", alt: "Quelque chose de neuf")%>
           </div>
-        <div class="formules padding-form">
+        <div class="formules padding-form padding-form-resp">
 
           <h1 class="red-formule">Nos formules d’adhésion</h1>
           <br>
@@ -87,13 +88,19 @@ d’artistes plasticiens professionnels de France!</p>
         </div>
       </div>
 
-  <div class="formulaire-div flex-second padding-form">
-    <div>
+  <div class="formulaire-div flex-second padding-form-deux padding-form-deux-resp">
+    <div class="test-f">
       <h2 class="red">Informations personnelles:</h2>
       <br>
       <%= render template: "amis/new" %>
     </div>
-    <div class="padding-form">
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div class="test-m">
       <h2 class="red">Moyens de paiement:</h2>
       <br>
       <h3 class="red">Option 1:</h3>
@@ -117,4 +124,5 @@ d’artistes plasticiens professionnels de France!</p>
 
 </div>
 <%= render "components/footer" %>
+</div>
 </body>

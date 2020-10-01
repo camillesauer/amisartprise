@@ -2,21 +2,127 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: https://sass-lang.com/
 .formulaire-div{
-width: 1260px;
+width: auto;
 border-radius: 20px;
-height: 600px;
-margin: 50px;
+height: auto;
+margin-bottom:100px;
 background-color: white;
 }
 
-.flex-second{
-display: flex;
-  justify-content:space-between;
-  align-items: center;
+@media (max-width: 500px) {
+.information{
+width: 280px !important;
+
+}
+}
+
+@media (max-width: 500px) {
+.test-m{
+width: 200px !important;
+
+}
+}
+
+@media (max-width: 500px) {
+.formules p h2 h1{
+width: 200px !important;
+
+}
+}
+
+@media (max-width: 500px) {
+.formulaire-div{
+width: 280px !important;
+
+}
+}
+
+@media (max-width: 500px) {
+.form-inputs{
+width: 200px !important;
+text-align:center;
+
+}
 }
 
 
-@media screen and (min-width: 1800px) {
+@media (max-width: 500px) {
+.test-f{
+margin-top: 50px;
+width: 200px !important;
+text-align:center;
+
+}
+}
+
+@media (max-width: 500px) {
+.test-f h3{
+width: 100px !important;
+}
+}
+
+@media (max-width: 500px) {
+.flexbox-form{
+margin-bottom: 50px !important;
+}
+}
+
+
+@media (max-width: 500px) {
+.form-inputs p h2 h1{
+
+text-align:center;
+
+}
+}
+
+@media (max-width: 500px) {
+.form-inputs input{
+width: 100px !important;
+
+}
+}
+
+@media (max-width: 500px) {
+.form-inputs textarea{
+width: 100px !important;
+
+}
+}
+
+@media (max-width: 500px) {
+.padding-form-resp {
+    margin: 50px !important;
+    padding: 40px !important;
+
+}
+}
+
+@media (max-width: 500px) {
+.padding-form-deux-resp {
+    margin: 50px;
+    padding: 40px;
+
+}
+}
+
+@media (max-width: 500px) {
+.padding-form-deux {
+    margin: 0px !important;
+    padding: 0px !important;
+
+}
+}
+
+
+.flex-second{
+display: flex;
+justify-content:space-between;
+align-items: center;
+}
+
+
+@media screen and (max-width: 1300px) {
 .flex-one{
 display: flex;
 flex-direction: column;
@@ -25,6 +131,14 @@ flex-direction: column;
 }
 }
 
+@media screen and (max-width: 1300px) {
+.flex-second{
+display: flex;
+flex-direction: column;
+  justify-content:center;
+  align-items: center;
+}
+}
 
 .information img {
   width: 200px;
@@ -83,7 +197,7 @@ color:white !important;
 }
 
 .formules{
-width: 600px;
+width: auto;
 border-radius: 20px;
 height: auto;
 margin: 50px;
@@ -95,6 +209,26 @@ padding: 30px
 .padding-form{
 margin: 50px;
 padding: 100px;
+}
+
+.new_user{
+  text-align:center;
+}
+
+.new_user-h{
+  text-align:center !important;
+}
+
+.container{
+  display: flex;
+  flex-direction: column;
+  justify-content:center;
+  align-items: center;
+  width:auto;
+}
+
+.padding-form-deux{
+padding: 180px;
 }
 
 .info-ad p{
@@ -111,6 +245,7 @@ padding: 100px;
   align-items: center;
   justify-content: space-between;
   height: 100px;
+  width: 320px;
   padding: 0px 50px;
   color: white;
   margin-bottom: 20px;
@@ -1389,9 +1524,6 @@ margin:20px;
 
 
 
-
-
-
 @media (max-width: 800px) {
 .display-section-2 {
    display:flex;
@@ -1469,10 +1601,11 @@ font-size: 18px !important;
 
 @media (max-width: 600px) {
 .menu{
- padding-left: 5px;
+
 
 }
 }
+
 
 @media (max-width: 499px) {
 .card-trip{
@@ -1859,7 +1992,488 @@ height: auto;
 margin:20px;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Cabin:wght@400;700&display=swap');
+@media screen and (min-width: 100px){
+.menu{
+  width: 100px;
+}
+}
 
+@media screen and (min-width: 150px){
+.menu{
+  width: 150px;
+}
+}
+
+@media screen and (min-width: 200px){
+.menu{
+  width: 200px;
+}
+}
+
+@media screen and (min-width: 250px){
+.menu{
+  width: 250px;
+}
+}
+
+@media screen and (min-width: 320px){
+.menu{
+  width: 320px;
+}
+}
+
+@media screen and (min-width: 300px){
+.menu{
+  width: 300px;
+}
+}
+
+
+@media screen and (min-width: 350px){
+.menu{
+  width: 350px;
+}
+}
+
+
+@media screen and (min-width: 400px){
+.menu{
+  width: 400px;
+}
+}
+
+@media screen and (min-width: 450px){
+.menu{
+  width: 450px;
+}
+}
+
+@media screen and (min-width: 500px){
+.menu{
+  width: 500px;
+}
+}
+
+@media screen and (min-width: 550px){
+.menu{
+  width: 550px;
+}
+}
+
+@media screen and (min-width: 600px){
+.menu{
+  width: 600px;
+}
+}
+
+@media screen and (min-width: 650px){
+.menu{
+  width: 650px;
+}
+}
+
+@media screen and (min-width: 700px){
+.menu{
+  width: 700px;
+}
+}
+
+@media screen and (min-width: 750px){
+.menu{
+  width: 750px;
+}
+}
+
+@media screen and (min-width: 800px){
+.menu{
+  width: 800px;
+}
+}
+
+@media screen and (min-width: 850px){
+.menu{
+  width: 850px;
+}
+}
+
+@media screen and (min-width: 900px){
+.menu{
+  width: 900px;
+}
+}
+
+@media screen and (min-width: 950px){
+.menu{
+  width: 950px;
+}
+}
+
+@media screen and (min-width: 1000px){
+.menu{
+  width: 1000px;
+}
+}
+
+@media screen and (min-width: 1050px){
+.menu{
+  width: 1050px;
+}
+}
+@media screen and (min-width: 1100px){
+.menu{
+  width: 1100px;
+}
+}
+
+@media screen and (min-width: 1150px){
+.menu{
+  width: 1150px;
+}
+}
+
+@media screen and (min-width: 1250px){
+.menu{
+  width: 1250px;
+}
+}
+
+@media screen and (min-width: 1200px){
+.menu{
+  width: 1200px;
+}
+}
+
+@media screen and (min-width: 1300px){
+.menu{
+  width: 1300px;
+}
+}
+
+@media screen and (min-width: 1350px){
+.menu{
+  width: 1350px;
+}
+}
+
+@media screen and (min-width: 1400px){
+.menu{
+  width: 1400px;
+}
+}
+
+@media screen and (min-width: 1450px){
+.menu{
+  width: 1450px;
+}
+}
+
+
+@media screen and (min-width: 1500px){
+.menu{
+  width: 1500px;
+}
+}
+
+@media screen and (min-width: 1550px){
+.menu{
+  width: 1550px;
+}
+}
+
+@media screen and (min-width: 1600px){
+.menu{
+  width: 1600px;
+}
+}
+
+@media screen and (min-width: 1650px){
+.menu{
+  width: 1650px;
+}
+}
+
+@media screen and (min-width: 1700px){
+.menu{
+  width: 1700px;
+}
+}
+
+@media screen and (min-width: 1750px){
+.menu{
+  width: 1750px;
+}
+}
+
+@media screen and (min-width: 1800px){
+.menu{
+  width: 1800px;
+}
+}
+
+@media screen and (min-width: 1850px){
+.menu{
+  width: 1850px;
+}
+}
+
+@media screen and (min-width: 1900px){
+.menu{
+  width: 1900px;
+}
+}
+
+@media screen and (min-width: 1950px){
+.menu{
+  width: 1950px;
+}
+}
+
+@media screen and (min-width: 2000px){
+.menu{
+  width: 2000px;
+}
+}
+
+@media screen and (min-width: 100px){
+.footer-shadow{
+  width: 100px;
+}
+}
+
+@media screen and (min-width: 150px){
+.footer-shadow{
+  width: 150px;
+}
+}
+
+@media screen and (min-width: 200px){
+.footer-shadow{
+  width: 200px;
+}
+}
+
+@media screen and (min-width: 250px){
+.footer-shadow{
+  width: 250px;
+}
+}
+
+@media screen and (min-width: 320px){
+.footer-shadow{
+  width: 320px;
+}
+}
+
+@media screen and (min-width: 300px){
+.footer-shadow{
+  width: 300px;
+}
+}
+
+@media screen and (min-width: 350px){
+.footer-shadow{
+  width: 350px;
+}
+}
+
+
+@media screen and (min-width: 400px){
+.footer-shadow{
+  width: 400px;
+}
+}
+
+@media screen and (min-width: 450px){
+.footer-shadow{
+  width: 450px;
+}
+}
+
+@media screen and (min-width: 500px){
+.footer-shadow{
+  width: 500px;
+}
+}
+
+@media screen and (min-width: 550px){
+.footer-shadow{
+  width: 550px;
+}
+}
+
+@media screen and (min-width: 600px){
+.footer-shadow{
+  width: 600px;
+}
+}
+
+@media screen and (min-width: 650px){
+.footer-shadow{
+  width: 650px;
+}
+}
+
+@media screen and (min-width: 700px){
+.footer-shadow{
+  width: 700px;
+}
+}
+
+@media screen and (min-width: 750px){
+.footer-shadow{
+  width: 750px;
+}
+}
+
+@media screen and (min-width: 800px){
+.footer-shadow{
+  width: 800px;
+}
+}
+
+@media screen and (min-width: 850px){
+.footer-shadow{
+  width: 850px;
+}
+}
+
+@media screen and (min-width: 900px){
+.footer-shadow{
+  width: 900px;
+}
+}
+
+@media screen and (min-width: 950px){
+.footer-shadow{
+  width: 950px;
+}
+}
+
+@media screen and (min-width: 1000px){
+.footer-shadow{
+  width: 1000px;
+}
+}
+
+@media screen and (min-width: 1050px){
+.footer-shadow{
+  width: 1050px;
+}
+}
+@media screen and (min-width: 1100px){
+.footer-shadow{
+  width: 1100px;
+}
+}
+
+@media screen and (min-width: 1150px){
+.footer-shadow{
+  width: 1150px;
+}
+}
+
+@media screen and (min-width: 1250px){
+.footer-shadow{
+  width: 1250px;
+}
+}
+
+@media screen and (min-width: 1200px){
+.footer-shadow{
+  width: 1200px;
+}
+}
+
+@media screen and (min-width: 1300px){
+.footer-shadow{
+  width: 1300px;
+}
+}
+
+@media screen and (min-width: 1350px){
+.footer-shadow{
+  width: 1350px;
+}
+}
+
+@media screen and (min-width: 1400px){
+.footer-shadow{
+  width: 1400px;
+}
+}
+
+@media screen and (min-width: 1450px){
+.footer-shadow{
+  width: 1450px;
+}
+}
+
+
+@media screen and (min-width: 1500px){
+.footer-shadow{
+  width: 1500px;
+}
+}
+
+@media screen and (min-width: 1550px){
+.footer-shadow{
+  width: 1550px;
+}
+}
+
+@media screen and (min-width: 1600px){
+.footer-shadow{
+  width: 1600px;
+}
+}
+
+@media screen and (min-width: 1650px){
+.footer-shadow{
+  width: 1650px;
+}
+}
+
+@media screen and (min-width: 1700px){
+.footer-shadow{
+  width: 1700px;
+}
+}
+
+@media screen and (min-width: 1750px){
+.footer-shadow{
+  width: 1750px;
+}
+}
+
+@media screen and (min-width: 1800px){
+.footer-shadow{
+  width: 1800px;
+}
+}
+
+@media screen and (min-width: 1850px){
+.footer-shadow{
+  width: 1850px;
+}
+}
+
+@media screen and (min-width: 1900px){
+.footer-shadow{
+  width: 1900px;
+}
+}
+
+@media screen and (min-width: 1950px){
+.footer-shadow{
+  width: 1950px;
+}
+}
+
+@media screen and (min-width: 2000px){
+.footer-shadow{
+  width: 2000px;
+}
+}
+@import url('https://fonts.googleapis.com/css2?family=Cabin:wght@400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Cabin:ital@0;1&display=swap');
