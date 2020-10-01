@@ -1,1 +1,18 @@
-mentions.html.erb
+<div class="container-ok">
+<%= render "components/header" %>
+<body style="background-color:#FF0000;">
+<div class="img-back-blanc"><%= link_to(image_tag("button 2", alt: "Art prise, Place à la culture de demain! - all rights reserved."), root_path) %></div>
+
+  <div class="container-ml mentions-legales">
+    <h1>MENTION LÉGALES</h1>
+    <p>Le présent site http://www.amis-artprise.com est édité par :</p>
+    <p>© Art prise, Place à la culture de demain!, Association loi 1901, dont le siège social est situé au 22 rue marmontel, 75015 Paris</p>
+    <p>RNA : W751255932</p>
+    <p>Adresse email : contact@artprise.fr</p>
+    <p>Hébergeur du site : Namecheap, Phoenix, Arizona, United States</p>
+    <p>Responsable du site : Madame Camille Sauer</p>
+    <p>Collectif RPZ - Tous droits réservés.</p>
+  </div>
+<%= render "components/footer" %>
+</body>
+</div>
